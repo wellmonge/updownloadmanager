@@ -1,0 +1,7 @@
+<paths>
+     <cache-path name="updownloadmanager-cache" path="/updownloadmanager-cache/" />
+     <files-path name="updownloadmanager-files" path="/updownloadmanager-files/" />
+     <external-path name="updownloadmanager-external-path" path="/updownloadmanager-external-path/" />
+     <external-files-path name="updownloadmanager-external-path" path="updownloadmanager-external-path" />
+     <external-cache-path name="updownloadmanager-external-cache-path" path="updownloadmanager-external-cache-path" />
+</paths>
