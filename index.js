@@ -1,5 +1,34 @@
-import App from './App';
-import { AppRegistry } from 'react-native';
+import { Platform } from 'react-native';
+
+import { Platform, NativeModules } from 'react-native';
 
 
-AppRegistry.registerComponent('updownloadmanager', () => App);
+export const postFormData = (config, successCallback, cancelCallback) => {
+    if (Platform.OS === android) {
+        NativeModules.UpdownloadManager.postFormData(config, successCallback, cancelCallback);
+    }
+}
+
+export const openSelectDialog = (config, successCallback, cancelCallback) => {
+    if (Platform.OS === android) {
+        NativeModules.UpdownloadManager.openSelectDialog(config, successCallback, cancelCallback);
+    }
+}
+
+export const showFile = (URLtoDownload) => {
+    if (Platform.OS === android) {
+        NativeModules.UpdownloadManager.showFile(URLtoDownload);
+    }
+}
+
+export const downloadFile = (URLtoDownload) => {
+    if (Platform.OS === android) {
+        NativeModules.UpdownloadManager.downloadFile(URLtoDownload);
+    }
+}
+
+export const teste = (message) => {
+    if (Platform.OS === android) {
+        NativeModules.UpdownloadManager.Teste(message);
+    }
+}
