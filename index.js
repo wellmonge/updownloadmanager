@@ -1,4 +1,3 @@
-import { Platform } from 'react-native';
 
 import { Platform, NativeModules } from 'react-native';
 
